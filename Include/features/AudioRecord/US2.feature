@@ -25,3 +25,18 @@ Feature: Audio Recorder
     Given the user has the app launched
     When the user enters the view
     Then the user verifies the button is present
+
+  @Valid
+  Scenario Outline: Audio record menu and respective objects exist
+    Given the user is in the view
+    When the user clicks the small button
+    Then the user navigates to the audio record menu
+    And the user verifies the record button is present
+    And the user verifies the decibel counter is present
+    And the user verifies the chronometer is present
+    And the user varifies the decibel counter text is <decibelCounterText>
+    And the user verifies the chronometer text is <chronometerText>
+
+    Examples:
+      | decibelCounterText | chronometerText |
+      | 0 dB               | 00:00           |

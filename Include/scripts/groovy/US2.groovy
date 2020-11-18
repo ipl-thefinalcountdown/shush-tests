@@ -61,4 +61,46 @@ class US2 {
 	def the_user_verifies_the_button_is_present() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.SmallAudioRecordButton), 0)
 	}
+
+	@Given("the user is in the view")
+	def the_user_is_in_the_view() {
+		Mobile.tap(findTestObject(GlobalVariable.MainView), 0)
+	}
+
+	@When("the user clicks the small button")
+	def the_user_clicks_the_small_button() {
+		Mobile.tap(findTestObject(GlobalVariable.SmallAudioRecordButton), 0)
+	}
+
+	@Then("the user navigates to the audio record menu")
+	def the_user_navigates_to_the_audio_record_menu() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.AudioRecordMenu), 0)
+	}
+
+	@And("the user verifies the record button is present")
+	def the_user_verifies_the_recordButton_is_present() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.AudioRecordButton), 0)
+	}
+
+	@And("the user verifies the decibel counter is present")
+	def the_user_verifies_the_decibelCounter_is_present() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.DecibelCounter), 0)
+	}
+
+	@And("the user verifies the chronometer is present")
+	def the_user_verifies_the_chronometer_is_present() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.Chronometer), 0)
+	}
+
+	@And("the user varifies the decibel counter text is (.*)")
+	def the_user_varifies_the_decibelCounter_text_is(String decibelCounterText) {
+		String txt = Mobile.getText(findTestObject(GlobalVariable.DecibelCounter), 0)
+		Mobile.verifyEqual(txt, decibelCounterText)
+	}
+
+	@And("the user verifies the chronometer text is (.*)")
+	def the_user_verifies_the_chronometer_text_is(String chronometerText) {
+		String txt = Mobile.getText(findTestObject(GlobalVariable.Chronometer), 0)
+		Mobile.verifyEqual(txt, chronometerText)
+	}
 }
