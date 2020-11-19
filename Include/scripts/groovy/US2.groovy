@@ -103,4 +103,26 @@ class US2 {
 		String txt = Mobile.getText(findTestObject(GlobalVariable.Chronometer), 0)
 		Mobile.verifyEqual(txt, chronometerText)
 	}
+
+	@Given("the user is in the audio record menu")
+	def the_user_is_in_the_audio_record_menu() {
+		Mobile.tap(findTestObject(GlobalVariable.AudioRecordMenu), 0)
+	}
+
+	@When("the user clicks the record button")
+	def the_user_clicks_the_recordButton() {
+		Mobile.tap(findTestObject(GlobalVariable.AudioRecordButton), 0)
+	}
+
+	@Then("the user verifies the chronometer is not (.*)")
+	def the_user_verifies_the_chronometer_is_not(String chronometerText) {
+		String txt = Mobile.getText(findTestObject(GlobalVariable.Chronometer), 0)
+		Mobile.verifyNotEqual(txt, chronometerText)
+	}
+
+	@And("the user verifies the decibel counter is not (.*)")
+	def the_user_verifies_the_decibelCounter_is_not(String decibelCounterText) {
+		String txt = Mobile.getText(findTestObject(GlobalVariable.DecibelCounter), 0)
+		Mobile.verifyNotEqual(txt, decibelCounterText)
+	}
 }

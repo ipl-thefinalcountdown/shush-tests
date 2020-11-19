@@ -40,3 +40,14 @@ Feature: Audio Recorder
     Examples:
       | decibelCounterText | chronometerText |
       | 0 dB               | 00:00           |
+
+  @Valid
+  Scenario Outline: Noise level mesurement
+    Given the user is in the audio record menu
+    When the user clicks the record button
+    Then the user verifies the chronometer is not <chronometerText>
+    And the user verifies the decibel counter is not <decibelCounterText>
+
+    Examples:
+      | decibelCounterText | chronometerText |
+      | 0 dB               | 00:00           |
