@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>shared</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'../project/app/build/outputs/apk/debug/app-debug.apk'</initValue>
+      <name>AppPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/MainView'</initValue>
+      <name>MainView</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/SmallAudioRecordButton'</initValue>
+      <name>SmallAudioRecordButton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/AudioRecordMenu'</initValue>
+      <name>AudioRecordMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/AudioRecordButton'</initValue>
+      <name>AudioRecordButton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/DecibelCounter'</initValue>
+      <name>DecibelCounter</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/Chronometer'</initValue>
+      <name>Chronometer</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
