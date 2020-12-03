@@ -71,4 +71,9 @@ class US3 {
 	def the_user_verifies_the_LocalMeasurementsMenu_exist() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.LocalMeasurementsMenu), 0)
 	}
+	
+	@Then("the user verifies the save button is present")
+	def the_user_verifies_the_saveButton_is_present() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.SaveButton), 31)
+	}
 }

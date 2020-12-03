@@ -30,3 +30,10 @@ Feature: As a user, I want to save my noise level recordings so that I can acces
   	Given the user is in the audio record menu
   	When the user clicks the small local measurements button
   	Then the user verifies the local measurements menu exist
+
+  @Valid
+  Scenario: Save button is present
+  	Given the user has the application launched
+  	When the user clicks the small record button
+  	And the user clicks the record button
+  	Then the user verifies the save button is present
