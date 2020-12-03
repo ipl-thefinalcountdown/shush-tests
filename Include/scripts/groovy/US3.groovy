@@ -61,4 +61,14 @@ class US3 {
 	def the_user_verifies_the_small_localMeasurementsButton_exists() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.LocalMeasurementsButton), 0)
 	}
+
+	@When("the user clicks the small local measurements button")
+	def the_user_clicks_the_small_localMeasurementsButton() {
+		Mobile.tap(findTestObject(GlobalVariable.LocalMeasurementsButton), 0)
+	}
+
+	@Then("the user verifies the local measurements menu exist")
+	def the_user_verifies_the_LocalMeasurementsMenu_exist() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.LocalMeasurementsMenu), 0)
+	}
 }
