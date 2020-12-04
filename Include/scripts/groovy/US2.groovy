@@ -111,7 +111,7 @@ class US2 {
 
 	@When("the user clicks the record button")
 	def the_user_clicks_the_recordButton() {
-		Mobile.tap(findTestObject(GlobalVariable.AudioRecordButton), 0)
+		Mobile.tap(findTestObject(GlobalVariable.AudioRecordButton), 30)
 	}
 
 	@Then("the user verifies the chronometer is not (.*)")

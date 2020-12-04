@@ -39,4 +39,39 @@
       <initValue>'Object Repository/AudioRecordMenu/Chronometer'</initValue>
       <name>Chronometer</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/LocalMeasurementsButton'</initValue>
+      <name>LocalMeasurementsButton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/SaveButton'</initValue>
+      <name>SaveButton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/LocalMeasurementsMenu/LocalMeasurementsMenu'</initValue>
+      <name>LocalMeasurementsMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/HamburguerButton'</initValue>
+      <name>HamburguerButton</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/HamburguerMapMenu'</initValue>
+      <name>HamburguerMapMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/MapMenu/MapMenu'</initValue>
+      <name>MapMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/SaveToast'</initValue>
+      <name>SaveToast</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
