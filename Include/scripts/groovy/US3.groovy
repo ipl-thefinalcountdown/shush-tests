@@ -6,6 +6,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -18,7 +19,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import internal.GlobalVariable as GlobalVariable
-
+import io.appium.java_client.AppiumDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
@@ -44,6 +45,7 @@ import cucumber.api.java.en.When
 
 
 class US3 {
+	String decibel;
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
@@ -71,9 +73,24 @@ class US3 {
 	def the_user_verifies_the_LocalMeasurementsMenu_exist() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.LocalMeasurementsMenu), 0)
 	}
-	
+
 	@Then("the user verifies the save button is present")
 	def the_user_verifies_the_saveButton_is_present() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.SaveButton), 31)
+	}
+
+	@When("the user clicks the save button")
+	def the_user_clicks_the_saveButton() {
+		Mobile.tap(findTestObject(GlobalVariable.SaveButton), 0)
+		decibel = Mobile.getText(findTestObject(GlobalVariable.DecibelCounter), 0)
+	}
+
+	@Then("the user verifies the last card has the same noise level as the last measurement")
+	def the_user_verifies_the_last_card_has_the_same_noise_level_as_the_last_measurement() {
+		AppiumDriver driver = MobileDriverFactory.getDriver()
+		List<WebElement> elements = driver.findElements(By.id("pt.ipleiria.taes.shush:id/intensity"))
+		WebElement card = elements.get(elements.size() - 1)
+		String txt = card.getText()
+		Mobile.verifyEqual(txt, decibel)
 	}
 }
