@@ -56,4 +56,14 @@ class US10 {
 	def the_user_verifies_the_confirmationDialog_exists() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.ConfirmationDialog), 0)
 	}
+
+	@Given("the user is in the confirmation dialog")
+	def the_user_is_in_the_confirmationDialog() {
+		Mobile.tap(findTestObject(GlobalVariable.ConfirmationDialog), 0)
+	}
+
+	@When("the user clicks in the cancel button")
+	def the_user_clicks_in_the_cancelButton() {
+		Mobile.tap(findTestObject(GlobalVariable.ConfirmationDialogNO), 0)
+	}
 }

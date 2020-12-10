@@ -26,3 +26,9 @@ Feature: As a user, I want to have a confirmation dialog after clicking the save
     And the user clicks the record button
     And the user clicks the save button
     Then the user verifies the confirmation dialog exists
+
+  @Valid
+  Scenario: Cancel save
+    Given the user is in the confirmation dialog
+    When the user clicks in the cancel button
+    Then the user verifies the save button is present
