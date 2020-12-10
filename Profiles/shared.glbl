@@ -104,4 +104,9 @@
       <initValue>'Object Repository/AudioRecordMenu/ConfirmationDialogYES'</initValue>
       <name>ConfirmationDialogYES</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/ShareButton'</initValue>
+      <name>ShareButton</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
