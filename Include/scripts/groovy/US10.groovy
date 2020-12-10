@@ -51,4 +51,9 @@ class US10 {
 	def the_user_clicks_the_yesButton() {
 		Mobile.tap(findTestObject(GlobalVariable.ConfirmationDialogYES), 0)
 	}
+
+	@Then("the user verifies the confirmation dialog exists")
+	def the_user_verifies_the_confirmationDialog_exists() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.ConfirmationDialog), 0)
+	}
 }
