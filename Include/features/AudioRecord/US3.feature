@@ -42,6 +42,7 @@ Feature: As a user, I want to save my noise level recordings so that I can acces
   Scenario: Noise level saved
 		Given the user is in the audio record menu
 		When the user clicks the save button
+		And the user clicks the yes button
 		And the user clicks the small local measurements button
 		Then the user verifies the last card has the same noise level as the last measurement
 
