@@ -81,8 +81,8 @@ class US3 {
 
 	@When("the user clicks the save button")
 	def the_user_clicks_the_saveButton() {
-		Mobile.tap(findTestObject(GlobalVariable.SaveButton), 0)
 		decibel = Mobile.getText(findTestObject(GlobalVariable.DecibelCounter), 0)
+		Mobile.tap(findTestObject(GlobalVariable.SaveButton), 0)
 	}
 
 	@Then("the user verifies the last card has the same noise level as the last measurement")
