@@ -89,4 +89,19 @@
       <initValue>'Object Repository/MapMenu/TabOptionShared'</initValue>
       <name>TabOptionShared</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/ConfirmationDialog'</initValue>
+      <name>ConfirmationDialog</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/ConfirmationDialogNO'</initValue>
+      <name>ConfirmationDialogNO</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/AudioRecordMenu/ConfirmationDialogYES'</initValue>
+      <name>ConfirmationDialogYES</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
