@@ -51,4 +51,19 @@ class US6 {
 	def the_user_verifies_the_shareButton_exists() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.ShareButton), 0)
 	}
+
+	@When("the user clicks the share button")
+	def the_user_clicks_the_shareButton() {
+		Mobile.tap(findTestObject(GlobalVariable.ShareButton), 0)
+	}
+
+	@When("the user verifies the Yes button exists")
+	def the_user_verifies_the_yesButtonexists() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.ConfirmationDialogYES), 0)
+	}
+
+	@And("the user verifies the No button exists")
+	def the_user_verifies_the_noButtonexists() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.ConfirmationDialogNO), 0)
+	}
 }

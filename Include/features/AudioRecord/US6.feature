@@ -25,3 +25,12 @@ Feature: As a user, I want to have a share button so that I can share my noise l
     When the user clicks the small record button
     And the user clicks the record button
     Then the user verifies the share button exists
+
+  @Valid
+  Scenario: Share confirmation
+    Given the user is in the audio record menu
+    When the user clicks the share button
+    Then the user verifies the confirmation dialog exists
+    And the user verifies the Yes button exists
+    And the user verifies the No button exists
+
