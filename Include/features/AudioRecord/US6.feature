@@ -40,3 +40,10 @@ Feature: As a user, I want to have a share button so that I can share my noise l
     When the user clicks the No button
     Then the user verifies the share button exists
 
+  @Valid
+  Scenario: Share measurement
+    Given the user is in the audio record menu
+    When the user clicks the share button
+    And the user clicks the yes button
+    Then the user verifies the share button is not present
+

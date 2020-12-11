@@ -71,4 +71,9 @@ class US6 {
 	def the_user_clicks_the_noButton() {
 		Mobile.tap(findTestObject(GlobalVariable.ConfirmationDialogNO), 0)
 	}
+
+	@When("the user verifies the share button is not present")
+	def the_user_verifies_the_shareButton_is_not_presentButton() {
+		Mobile.verifyElementNotExist(findTestObject(GlobalVariable.ConfirmationDialogNO), 5)
+	}
 }
