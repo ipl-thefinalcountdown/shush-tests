@@ -34,3 +34,9 @@ Feature: As a user, I want to have a share button so that I can share my noise l
     And the user verifies the Yes button exists
     And the user verifies the No button exists
 
+  @Valid
+  Scenario: Cancel Share
+    Given the user is in the confirmation dialog
+    When the user clicks the No button
+    Then the user verifies the share button exists
+

@@ -66,4 +66,9 @@ class US6 {
 	def the_user_verifies_the_noButtonexists() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.ConfirmationDialogNO), 0)
 	}
+	
+	@When("the user clicks the No button")
+	def the_user_clicks_the_noButton() {
+		Mobile.tap(findTestObject(GlobalVariable.ConfirmationDialogNO), 0)
+	}
 }
