@@ -109,4 +109,39 @@
       <initValue>'Object Repository/AudioRecordMenu/ShareButton'</initValue>
       <name>ShareButton</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/HamburguerLocationChartMenu'</initValue>
+      <name>HamburguerLocationChartMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/General/HamburguerTimeChartMenu'</initValue>
+      <name>HamburguerTimeChartMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/Chart/Time/TimeChartMenu'</initValue>
+      <name>TimeChartMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/Chart/Location/LocationChartMenu'</initValue>
+      <name>LocationChartMenu</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/Chart/ChartTabOptionShared'</initValue>
+      <name>ChartTabOptionShared</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/Chart/ChartTabOptionLocal'</initValue>
+      <name>ChartTabOptionLocal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Object Repository/Chart/ChartOptionTab'</initValue>
+      <name>ChartOptionTab</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
