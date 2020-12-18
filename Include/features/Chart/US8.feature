@@ -35,3 +35,9 @@ Feature: As a user I want to have a menu of statistics so that I can visualize n
     Given the user is on the location chart menu
     When the user clicks the chart shared tab option
     Then the user varifies the chart shared tab option is selected
+
+  @Valid
+  Scenario: Location local chart
+    Given the user is on the location chart menu
+    When the user clicks the chart local tab option
+    Then the user verifies the chart local tab option is selected
