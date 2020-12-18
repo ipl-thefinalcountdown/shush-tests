@@ -41,3 +41,14 @@ Feature: As a user I want to have a menu of statistics so that I can visualize n
     Given the user is on the location chart menu
     When the user clicks the chart local tab option
     Then the user verifies the chart local tab option is selected
+
+  @Valid
+  Scenario: Time chart menu exists
+    Given the user is on the location chart menu
+    When the user clicks the hambuguer menu button
+    And the user clicks the hamburguer time chart menu button
+    Then the user verifies time chart menu exists
+    And the user verifies the chart tab options exist
+    And the user verifies the chart local tab option exists
+    And the user verifies the chart shared tab option exists
+    And the user verifies the chart local tab option is selected

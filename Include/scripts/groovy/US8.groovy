@@ -96,9 +96,19 @@ class US8 {
 	def the_user_varifies_the_chartSharedTabOption_is_selected() {
 		Mobile.verifyElementAttributeValue(findTestObject(GlobalVariable.ChartTabOptionShared), "selected", "true", 5)
 	}
-	
+
 	@When("the user clicks the chart local tab option")
 	def the_user_clicks_the_chartLocalTabOption() {
 		Mobile.tap(findTestObject(GlobalVariable.ChartTabOptionLocal), 0)
+	}
+
+	@And("the user clicks the hamburguer time chart menu button")
+	def the_user_clicks_the_hamburguerTimeChartMenuButton() {
+		Mobile.tap(findTestObject(GlobalVariable.HamburguerTimeChartMenu), 0)
+	}
+
+	@Then("the user verifies time chart menu exists")
+	def the_user_verifies_the_TimeChartMenu_exists() {
+		Mobile.verifyElementExist(findTestObject(GlobalVariable.TimeChartMenu), 0)
 	}
 }
