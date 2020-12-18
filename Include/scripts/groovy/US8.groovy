@@ -92,8 +92,8 @@ class US8 {
 		Mobile.tap(findTestObject(GlobalVariable.ChartTabOptionShared), 0)
 	}
 
-	@Then("the user varifies the chart shared tab option is selected")
-	def the_user_varifies_the_chartSharedTabOption_is_selected() {
+	@Then("the user verifies the chart shared tab option is selected")
+	def the_user_verifies_the_chartSharedTabOption_is_selected() {
 		Mobile.verifyElementAttributeValue(findTestObject(GlobalVariable.ChartTabOptionShared), "selected", "true", 5)
 	}
 
@@ -110,5 +110,10 @@ class US8 {
 	@Then("the user verifies time chart menu exists")
 	def the_user_verifies_the_TimeChartMenu_exists() {
 		Mobile.verifyElementExist(findTestObject(GlobalVariable.TimeChartMenu), 0)
+	}
+	
+	@Given("the user is on the time chart menu")
+	def the_user_is_on_the_timeChartMenu() {
+		Mobile.tap(findTestObject(GlobalVariable.TimeChartMenu), 0)
 	}
 }
