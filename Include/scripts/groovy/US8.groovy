@@ -81,4 +81,19 @@ class US8 {
 	def the_user_verifies_the_chartLocalTabOption_is_selected() {
 		Mobile.verifyElementAttributeValue(findTestObject(GlobalVariable.ChartTabOptionLocal), "selected", "true", 5)
 	}
+
+	@Given("the user is on the location chart menu")
+	def the_user_is_on_the_locationChartMenu() {
+		Mobile.tap(findTestObject(GlobalVariable.LocationChartMenu), 0)
+	}
+
+	@When("the user clicks the chart shared tab option")
+	def the_user_clicks_the_chartSharedTabOption() {
+		Mobile.tap(findTestObject(GlobalVariable.ChartTabOptionShared), 0)
+	}
+
+	@Then("the user varifies the chart shared tab option is selected")
+	def the_user_varifies_the_chartSharedTabOption_is_selected() {
+		Mobile.verifyElementAttributeValue(findTestObject(GlobalVariable.ChartTabOptionShared), "selected", "true", 5)
+	}
 }
